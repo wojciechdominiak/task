@@ -1,0 +1,68 @@
+.taskToDo {
+  animation: slidein 0.2s;
+  animation-fill-mode: forwards;
+  line-height: 50px;
+  font-size: 2em;
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  color: grey;
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  position: relative;
+  
+  &:hover {
+    color: tomato;
+    border-color: tomato;
+    cursor: pointer;
+  }
+  .taskToDo_title {
+    display: -webkit-box;
+    text-align: left;
+    max-width: 75%;
+    max-height: 4em;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .taskToDo__button {
+    animation: opacity 0.5s;
+    animation-fill-mode: forwards;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: white;
+    color: green;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+@keyframes slidein {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

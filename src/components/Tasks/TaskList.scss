@@ -1,0 +1,11 @@
+.taskList {
+  padding: 0;
+  width: 95%;
+  max-width: 500px;
+
+  .taskList__title {
+    color: green;
+    text-align: center;
+    font-size: 2em;
+  }
+}
